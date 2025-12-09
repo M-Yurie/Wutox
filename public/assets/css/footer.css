@@ -1,0 +1,15 @@
+.wutox-footer, footer {
+    background: none;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+footer p {
+    color: var(--inactive-text);
+    line-height: 1.5;
+}

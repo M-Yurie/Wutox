@@ -1,0 +1,108 @@
+.nav-menu {
+    width: 15.5rem;
+    height: 100vh;
+    background-image: -webkit-linear-gradient(90deg, var(--background), var(--section));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    align-items: center;
+    z-index: 1000;
+}
+.upper-part {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.nav-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-logo img {
+    width: 70%;
+    height: auto;
+    cursor: pointer
+}
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+}
+.nav-item svg {
+    max-width: 1rem;
+    max-height: 1rem;
+}
+.nav-item span {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.nav-item:hover {
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    color: var(--text);
+}
+.nav-item.active {
+    background-color: var(--ligther-section);
+    color: var(--text);
+}
+.bottom-part {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0.875rem;
+    border: none;
+    color: var(--inactive-text);
+    padding: 0.5rem 0.875rem;
+}
+.nav-button:hover {
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    color: var(--text);
+}
+.change-language-btn {
+    background-color: var(--background);
+    border-radius: 0.875rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+.donate-btn{
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--section);
+    position: relative;
+}
+.change-language-btn img{
+    width: 1.5rem;
+}
+.donate-btn img{
+    width: 3rem;
+    /* position: absolute;
+    left: 0; */
+}

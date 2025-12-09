@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Belanosima:wght@400;600;700&family=Galdeano&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+    --background: #0D1A2B;
+    --section: #192639;
+    --ligther-section: #1E2C3F;
+    --text: #FFFFFF;
+    --inactive-text: #C9D5E3;
+    --purple-highlight: #805ECB;
+    --blue-highlight: #3B9ACD;
+    --green-highlight: #39CC9F;
+
+    --space-xxs: 0.25rem;  /* 4px  */
+    --space-xs:  0.5rem;   /* 8px  */
+    --space-sm:  0.75rem;  /* 12px */
+    --fs-sm:     0.875rem; /* 14px */
+    --space-md:  1rem;     /* 16px */
+    --fs-lg:     1.25rem;  /* 20px */
+    --space-lg:  1.5rem;   /* 24px */
+    --space-xl:  2rem;     /* 32px */
+    --space-smm: 2.5rem;   /* 40px */
+    --space-xxl: 3rem;     /* 48px */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: belanosima, sans-serif;
+    font-weight: 400;
+    background-color: var(--background);
+    color: var(--text);
+    min-width: 100vw;
+    min-height: 100vh;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inactive {
+    color: var(--inactive-text);
+}
+
+.main-content, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    min-height: 100%;
+    padding: 2rem 4.8rem;
+    position: relative;
+
+    background-image: url('../images/hsr/wallpapers/version_3.2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(13, 26, 43, 0.85),
+            rgba(13, 26, 43, 1)
+        );
+    z-index: 0;
+}
+
+.main-content > * {
+    position: relative;
+    z-index: 1;
+}
