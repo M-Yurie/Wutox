@@ -28,3 +28,5 @@ $path = '/' . trim(str_replace($scriptDir, '', $requestUri), '/');
 if ($path === '//') $path = '/';
 
 $router->dispatch($path, $_SERVER['REQUEST_METHOD']);
+
+
